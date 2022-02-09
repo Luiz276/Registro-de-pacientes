@@ -1,0 +1,14 @@
+Programa que registra pacientes de um hospital.
+A cada paciente é atríbuído um número de acordo com a ordem de chegada.
+Eles são catalogados da seguinte maneira: código númerico, nome, horário de entrada, ala hospitalar, estado(em tratamento ou alta).
+Ex: Código: 1011, Paciente: Fulano, entrada: 13:00, Ortopedia, estado: em tratamento
+    Código: 2377, Paciente: Ciclano, entrada: 22/03/2021 14:00, Pediatria, estado:alta, saida: 25/04/2021 14:17
+    Código: 5, Paciente: Beltrano, entrada: 23:59, UTI, estado: grave
+
+Operações possíveis no programa base(rodando no terminal):
+0-encerrar programa(ao encerrar o programa todos os dados são salvos)
+1-novo paciente
+2-procurar paciente
+3-alterar dado de um paciente
+4-dar alta a um paciente
+5-lista de todos os pacientes
