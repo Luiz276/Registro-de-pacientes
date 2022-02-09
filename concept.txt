@@ -1,0 +1,11 @@
+Program that registers patients of a hospital.
+To each patient is given a number(code) according to arrival order.
+They are cataloged in the following manner: numeric code, name, time of arrival, hospital wing, condition(in treatment or discharged).
+
+Possible operations:
+0-close(all data is saved to a txt file)
+1-new patient
+2-serach patient
+3-alter patient data
+4-discharge a patient
+5-list all patients
