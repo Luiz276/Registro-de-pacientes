@@ -8,19 +8,19 @@ class Paciente:
         self.__data_entrada = (datetime.now()).strftime("%d/%m/%Y %H:%M")
     
     @property
-    def getEstado(self):
+    def getEstado(self) -> str:
         return self.__estado
     
     @property
-    def getNome(self):
+    def getNome(self) -> str:
         return self.__nome
     
     @property
-    def getAla(self):
+    def getAla(self) -> str:
         return self.__ala
     
     @property
-    def getDataEntrada(self):
+    def getDataEntrada(self) -> str:
         return self.__data_entrada
     
     @nome.setter
@@ -39,9 +39,6 @@ class Paciente:
     def setDataEntrada(self, data_entrada):
         self.__data_entrada = data_entrada
 
-    def return_dados(self):
+    def return_dados(self) -> str:
         #retorna todos os dados de um paciente em específico
-        if hasattr(self,'data_saida') == True:
-            return(f"Paciente: {self.getEstado()}, entrada: {self.getDataEntrada()}, ala: {self.getAla()}, estado: {self.getEstado()}")
-        else:
-            return("Paciente: {self.nome}, entrada: {self.data_entrada}, ala: {self.ala}, estado: {self.estado}")
+        return(f"Paciente: {self.getEstado()}, entrada: {self.getDataEntrada()}, ala: {self.getAla()}, estado: {self.getEstado()}")
